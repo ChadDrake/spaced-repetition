@@ -1,4 +1,7 @@
-.App {
+.login-field {
+  padding: 8px;
+}
+.LoginForm {
   display: flex;
   flex-direction: column;
   align-items: center;
