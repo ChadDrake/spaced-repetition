@@ -1,0 +1,12 @@
+.learning-route {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffeddf;
+}
+
+.form-field {
+  padding: 8px;
+  margin: auto;
+  width: fit-content;
+}

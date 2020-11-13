@@ -1,6 +1,6 @@
 h2 {
   margin: auto;
-  width: 20%;
+  width: fit-content;
 }
 .registration-form-field {
   display: block;

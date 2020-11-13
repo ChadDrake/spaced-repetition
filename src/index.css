@@ -1,8 +1,6 @@
-@import url('https://fonts.googleapis.com/css?family=Ubuntu');
-
-* {
+/* * {
   box-sizing: border-box;
-}
+} */
 
 body {
   margin: 0;
@@ -10,6 +8,8 @@ body {
   font-family: "Ubuntu", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #447604;
+  color: #1e1e24;
 }
 
 :root {
