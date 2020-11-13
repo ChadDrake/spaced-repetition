@@ -21,7 +21,6 @@ class LearningRoute extends Component {
     LearnServices.getHead()
       .then((res) => (res = res.json()))
       .then((res) => {
-        console.log(res);
         this.setState({ word: res.nextWord });
         this.setState({ totalScore: res.totalScore });
         this.setState({ correct: res.wordCorrectCount });
@@ -35,16 +34,12 @@ class LearningRoute extends Component {
     e.preventDefault();
     let { guess } = e.target;
     this.setState({ guess: guess.value });
-    LearnServices.postGuess({ guess: guess.value })
-      .then((res) => {
-        console.log(res);
-        this.setState({ isCorrect: res.isCorrect });
-        this.setState({ totalScore: res.totalScore });
-        this.setState({ answer: res.answer });
-        this.setState({ nextWord: res.nextWord });
-        //this.setState((prevState) => ({ word: prevState.nextWord }));
-      })
-      .then(() => console.log(this.state.word));
+    LearnServices.postGuess({ guess: guess.value }).then((res) => {
+      this.setState({ isCorrect: res.isCorrect });
+      this.setState({ totalScore: res.totalScore });
+      this.setState({ answer: res.answer });
+      this.setState({ nextWord: res.nextWord });
+    });
   };
   handleNext = (e) => {
     e.preventDefault();
