@@ -1,5 +1,5 @@
 Spaced-repetition client
-Live at :
+Live at : https://spaced-repetition-652exis5p.vercel.app/
 
 Summary
 This is a client for the spaced repetition server. The app allows a user to learn a new language using spaced repetition. It allows a user to log in and persist their data as well.
