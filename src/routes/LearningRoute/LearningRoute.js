@@ -43,6 +43,7 @@ class LearningRoute extends Component {
   };
   handleNext = (e) => {
     e.preventDefault();
+    this.getWord();
     this.setState({ isCorrect: null });
     this.setState((prevState) => ({ word: prevState.nextWord }));
     this.setState({ nextWord: null });
